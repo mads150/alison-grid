@@ -1,12 +1,10 @@
 body {
-	/*font-family: 'Fuggles', cursive;*/
 	background-color: #E3D37C;
 	font-size: 1.5em;
 	color: #47076A;
 }
 
 * {
-	/*font-family: 'Fuggles', cursive;*/
 	font-family: 'Mooli', sans-serif;
 }
 
@@ -21,22 +19,23 @@ body {
 	grid-template-columns: 1fr auto 1fr;
 }
 
-.navbar > * {
-	/*border: 2px solid black;*/
-}
-
 .wrapper {
 	display: grid;
 	grid-template-areas: 
-	"header header header"
 	"leftSide main rightSide"
 	"footer footer footer";
 	grid-template-columns: 20% 1fr 20%;
-	grid-template-rows: 200px 1fr 200px;
+	grid-template-rows: 1fr 200px;
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	height: 100vh;
 	margin: 0;
+	/*	grid-template-areas: 
+	"header header header"
+	"leftSide main rightSide"
+	"footer footer footer";
+	grid-template-columns: 20% 1fr 20%;
+	grid-template-rows: 200px 1fr 200px;*/
 }
 
 .jumbotron {
@@ -199,14 +198,13 @@ body {
 	}
 
 	.wrapper {
-	grid-template-areas: 
-	"header"
-	"main"
-	"leftSide" 
-	"rightSide"
-	"footer";
-	grid-template-columns: 1fr; /*one full row width*/
-	grid-template-rows: 270px 1fr 1fr 1fr 100px;
+		grid-template-areas: 
+		"main"
+		"leftSide" 
+		"rightSide"
+		"footer";
+		grid-template-columns: 1fr; /*one full row width*/
+		grid-template-rows: 270px 1fr 1fr 1fr 100px;
 	}
 
 	.navTog:checked ~ .menuItems {
