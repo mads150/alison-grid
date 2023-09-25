@@ -79,7 +79,6 @@ body {
 }
 
 .card .content {
-	border: 1px solid #B34EE9;
 	text-align: center;
 	padding: 5px;
 	display: block;
@@ -115,7 +114,6 @@ body {
 }
 
 .menuItems {
-	/*font-size: 1.2em;*/
 	display: grid;
 	grid-template-columns: repeat(4, auto) 1fr;
 	grid-gap: 12px;
@@ -148,17 +146,12 @@ body {
 	font-size: 2em;
 }
 
-#mainHeader {
-	grid-area: header;
-	height: auto;
-	overflow: hidden;
-}
-
 #leftSide {
 	grid-area: leftSide;
 }
 
 #leftSide h2 {
+	font-size: 1em;
 	text-align: center;
 	color: #47076A;
 }
@@ -204,7 +197,7 @@ body {
 		"rightSide"
 		"footer";
 		grid-template-columns: 1fr; /*one full row width*/
-		grid-template-rows: 270px 1fr 1fr 1fr 100px;
+		grid-template-rows: 1fr 1fr 1fr 100px;
 	}
 
 	.navTog:checked ~ .menuItems {

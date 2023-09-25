@@ -7,34 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Mooli&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-	<style>
-		#mainHeader {
-			grid-area: header;
-			height: auto;
-			overflow: hidden;
-		}
-
-		.wrapper {
-			grid-template-areas: 
-			"header header header"
-			"leftSide main rightSide"
-			"footer footer footer";
-			grid-template-rows: 200px 1fr 200px; 
-		}
-
-		@media only screen and (max-width:800px) {
-			.wrapper {
-				grid-template-areas: 
-				"header"
-				"main"
-				"leftSide" 
-				"rightSide"
-				"footer";
-				grid-template-columns: 1fr;
-				grid-template-rows: 270px 1fr 1fr 1fr 100px;
-			}
-		}
-	</style>
 </head>
 <body>
 	<div class="navCon">
@@ -51,19 +23,20 @@
 		</nav>
 	</div>
 	<div class="wrapper">
-		<header id="mainHeader">
-			<div class="jumbotron">
-				<h2>Welcome to my WebSite!</h2>
-				<h3>Tagline for my website wow</h3>
-			</div>
-		</header>
 		<div id="leftSide">
 			<h2>New Information</h2>
 			<div class="card">
 				<img src="https://dummyimage.com/600x400/0f0/f0f">
 				<div class="content">
 					<p>Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Nullam vehicula ipsum a arcu.</p>
-					<button class="btn violet">Read more</button>
+					<button class="btn red">Read more</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://dummyimage.com/600x400/f0f/f00">
+				<div class="content">
+					<p>Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Nullam vehicula ipsum a arcu.</p>
+					<button class="btn red">Read more</button>
 				</div>
 			</div>
 		</div>
@@ -71,13 +44,14 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. In mollis nunc sed id semper risus in hendrerit gravida. Sem integer vitae justo eget magna fermentum iaculis. </p>
 			<p>Consequat id porta nibh venenatis cras sed felis eget velit. Sed turpis tincidunt id aliquet risus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.</p>
 			<p>Neque volutpat ac tincidunt vitae semper quis. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Blandit massa enim nec dui nunc mattis enim ut tellus. Et leo duis ut diam quam nulla porttitor massa id.</p>
+			<p>Elit pellentesque habitant morbi tristique senectus et. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Viverra nam libero justo laoreet sit amet cursus. Ut aliquam purus sit amet luctus venenatis. Viverra aliquet eget sit amet tellus cras adipiscing enim. Tempor orci dapibus ultrices in iaculis nunc sed augue.</p>
 		</div>
 		<aside id="rightSide">
 			<div class="card">
 				<img src="https://dummyimage.com/600x400/ff0/f0f">
 				<div class="content">
-					<p>Nullam vehicula ipsum a arcu.</p>
-					<button class="btn violet">Read more</button>
+					<p>Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Nullam vehicula ipsum a arcu.</p>
+					<button class="btn red">Read more</button>
 				</div>
 			</div>
 		</aside>
